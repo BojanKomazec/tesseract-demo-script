@@ -25,7 +25,12 @@ console.log('main.js');
         })
         .then(function(result){
             console.log(result);
-            document.getElementById("result").innerHTML = result.text;
+            // let extractedText = result.text;
+            let extractedText = '';
+            result.lines.forEach(line => {
+                extractedText += line.text + '<br/>';
+            });
+            document.getElementById("result").innerHTML = extractedText;
         });
     };
 })();
