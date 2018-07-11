@@ -2,13 +2,18 @@
 <html>
     <head>
         <title>Tesseract demo</title>
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <p>Image:</p>
-        <img src='src/dummy-text-01.png' id='image'> 
-        <script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
-        <p>Extracted text:</p>
-        <p id='result'></p>
-        <script src='/js/main.js'></script>
+        <p class="paragraph-title">Image:</p>
+        <img src="src/dummy-text-01.png" id="image"> 
+        <script src="https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js"></script>
+        <p class="paragraph-title">Status:</p>
+        <p id="status"></p>
+        <p class="paragraph-title">Progress:</p>
+        <p id="progress"></p>
+        <p class="paragraph-title">Extracted text:</p>
+        <p id="result"></p>
+        <script src="/js/main.js"></script>
     </body>
 </html>
