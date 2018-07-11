@@ -2,18 +2,25 @@
 <html>
     <head>
         <title>Tesseract demo</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
-        <p class="paragraph-title">Image:</p>
-        <img src="src/dummy-text-01.png" id="image"> 
-        <script src="https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js"></script>
+        <p class="paragraph-title">Select image:</p>
+        <select id="image-list">
+            <option value="dummy-text-01-528x226.png">Original (528 x 226)</option>
+            <option value="dummy-text-01.1-1056x452.png">Scaled (1056 x 452)</option>
+        </select><br/>
+        <br/>
+        <img id="image" src="images/dummy-text-01-528x226.png"><br/>
+        <br/>
+        <button id="start-extraction">Start text extraction</button>
         <p class="paragraph-title">Status:</p>
         <p id="status"></p>
         <p class="paragraph-title">Progress:</p>
         <p id="progress"></p>
         <p class="paragraph-title">Extracted text:</p>
         <p id="result"></p>
-        <script src="/js/main.js"></script>
+        <script src="https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js"></script>
+        <script src="/scripts/main.js"></script>
     </body>
 </html>
