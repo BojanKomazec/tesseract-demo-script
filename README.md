@@ -1,2 +1,4 @@
 # tesseract-demo-script
-Tesseract demo. tesseract.js is included via script tag.
+Tesseract demo. 
+Tesseract JS project: https://github.com/naptha/tesseract.js
+tesseract.js is included via script tag.
